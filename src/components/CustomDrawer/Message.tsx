@@ -2,11 +2,11 @@ import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {MessageType} from '../../data';
 
-type Props = {
+interface MessageI {
   item: MessageType;
-};
+}
 
-const Message = ({item}: Props) => {
+export const Message = ({item}: MessageI) => {
   return (
     <View style={styles.container}>
       <Image source={item.image} style={styles.image} />
@@ -19,8 +19,6 @@ const Message = ({item}: Props) => {
     </View>
   );
 };
-
-export default Message;
 
 const styles = StyleSheet.create({
   container: {

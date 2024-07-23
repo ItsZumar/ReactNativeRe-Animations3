@@ -10,10 +10,7 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 import {message} from '../data';
-import Drawer from '../components/CustomDrawer/Drawer';
-import Header from '../components/CustomDrawer/Header';
-import Message from '../components/CustomDrawer/Message';
-import Overlay from '../components/CustomDrawer/Overlay';
+import {Drawer, Header, Message, Overlay} from '../components';
 
 const Chat = () => {
   const active = useSharedValue(false);

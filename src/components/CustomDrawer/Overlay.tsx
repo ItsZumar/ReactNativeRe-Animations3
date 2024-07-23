@@ -6,7 +6,7 @@ type Props = {
   active: SharedValue<boolean>;
 };
 
-const Overlay = ({active}: Props) => {
+export const Overlay = ({active}: Props) => {
   const animatedStyle = useAnimatedStyle(() => {
     return {
       display: active.value ? 'flex' : 'none',
@@ -23,8 +23,6 @@ const Overlay = ({active}: Props) => {
     </Animated.View>
   );
 };
-
-export default Overlay;
 
 const styles = StyleSheet.create({
   container: {

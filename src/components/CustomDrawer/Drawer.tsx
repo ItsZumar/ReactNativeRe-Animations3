@@ -1,14 +1,14 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import DrawerItem from './DrawerItem';
 import {SharedValue} from 'react-native-reanimated';
 import {drawerList} from '../../data';
+import {DrawerItem} from './DrawerItem';
 
 type Props = {
   active: SharedValue<boolean>;
 };
 
-const Drawer = ({active}: Props) => {
+export const Drawer = ({active}: Props) => {
   return (
     <View style={styles.container}>
       <View style={styles.contentContainer}>
@@ -28,8 +28,6 @@ const Drawer = ({active}: Props) => {
     </View>
   );
 };
-
-export default Drawer;
 
 const styles = StyleSheet.create({
   container: {

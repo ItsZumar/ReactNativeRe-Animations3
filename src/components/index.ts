@@ -17,3 +17,9 @@ export * from './CustomSegmentedControl/CustomSegmentedControl';
 export * from './ShakeAnimation/ShakeAnimation';
 export * from './Card3D/Card3D';
 export * from './SwipeCard/SwipeCard';
+
+export * from './CustomDrawer/Drawer';
+export * from './CustomDrawer/DrawerItem';
+export * from './CustomDrawer/Header';
+export * from './CustomDrawer/Message';
+export * from './CustomDrawer/Overlay';

@@ -10,7 +10,7 @@ type Props = {
   active: SharedValue<boolean>;
 };
 
-const DrawerItem = ({item, active}: Props) => {
+export const DrawerItem = ({item, active}: Props) => {
   const navigation = useTypeSafeNavigation();
   return (
     <Pressable
@@ -24,8 +24,6 @@ const DrawerItem = ({item, active}: Props) => {
     </Pressable>
   );
 };
-
-export default DrawerItem;
 
 const styles = StyleSheet.create({
   container: {

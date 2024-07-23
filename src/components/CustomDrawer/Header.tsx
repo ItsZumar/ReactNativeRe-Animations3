@@ -1,12 +1,13 @@
 import {Image, Pressable, StyleSheet, View} from 'react-native';
 import React from 'react';
+
 import {SharedValue} from 'react-native-reanimated';
 
-type Props = {
+interface HeaderI {
   active: SharedValue<boolean>;
-};
+}
 
-const Header = ({active}: Props) => {
+export const Header = ({active}: HeaderI) => {
   return (
     <View style={[styles.container]}>
       <Pressable
@@ -22,8 +23,6 @@ const Header = ({active}: Props) => {
     </View>
   );
 };
-
-export default Header;
 
 const styles = StyleSheet.create({
   container: {
