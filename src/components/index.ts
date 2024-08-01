@@ -23,3 +23,7 @@ export * from './CustomDrawer/DrawerItem';
 export * from './CustomDrawer/Header';
 export * from './CustomDrawer/Message';
 export * from './CustomDrawer/Overlay';
+
+export * from './FlashCardAnimation/Controls';
+export * from './FlashCardAnimation/FlashCard';
+export * from './FlashCardAnimation/FlashCards';
